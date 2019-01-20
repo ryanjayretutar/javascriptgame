@@ -6,17 +6,11 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<title></title>
+	<title>Pig Dice Game</title>
 </head>
 <body>
-
-
-	<div class="modal">
-		<h1 class="display-4 text-center"></h1>
-		<button class="btn btn-lg btn-outline-light text-white asd d-block"><h3></h3></button>
-	</div>
-
-				<div class="dice-board">
+		<div class="container">
+			<div class="dice-board">
 					<div class="container-dice">
 				      <div id='dice1' class="dice dice-one">
 				        <div id="dice-one-side-one" class='side one'>
@@ -92,10 +86,13 @@
 				      </div>
       			</div>  <!-- END container-dice 2 -->
 			</div>
+		</div>
+				
 
 	<section class="wrapper">
 		<!-- <button class="btn btn-lg btn-outline-light text-white new d-block"><h3>New Game</h3></button> -->
-		<div class="container top" >			
+
+		<div class="container">			
 			<div class="row">
 
 				<div class="col-lg-4 text-center border border-right p-5 panel-1 active">
@@ -107,91 +104,20 @@
                     </div>
                    
                 </div>
-			<div class="col-lg-4 control-box">
-				<!-- <div class="dice-board">
-					<div class="container-dice">
-				      <div id='dice1' class="dice dice-one">
-				        <div id="dice-one-side-one" class='side one'>
-				          <div class="divot one-1"></div>
-				        </div>
-				        <div id="dice-one-side-two" class='side two'>
-				          <div class="divot two-1"></div>
-				          <div class="divot two-2"></div>
-				        </div>
-				        <div id="dice-one-side-three" class='side three'>
-				          <div class="divot three-1"></div>
-				          <div class="divot three-2"></div>
-				          <div class="divot three-3"></div>
-				        </div>
-				        <div id="dice-one-side-four" class='side four'>
-				          <div class="divot four-1"></div>
-				          <div class="divot four-2"></div>
-				          <div class="divot four-3"></div>
-				          <div class="divot four-4"></div>
-				        </div>
-				        <div id="dice-one-side-five" class='side five'>
-				          <div class="divot five-1"></div>
-				          <div class="divot five-2"></div>
-				          <div class="divot five-3"></div>
-				          <div class="divot five-4"></div>
-				          <div class="divot five-5"></div>
-				        </div>
-				        <div id="dice-one-side-six" class='side six'>
-				          <div class="divot six-1"></div>
-				          <div class="divot six-2"></div>
-				          <div class="divot six-3"></div>
-				          <div class="divot six-4"></div>
-				          <div class="divot six-5"></div>
-				          <div class="divot six-6"></div>
-				        </div>
-				      </div>
-				    </div> END container-dice
-    				<div class="container-dice">
-				      <div id='dice2' class="dice2 dice-two">
-				        <div id="dice-two-side-one" class='side one'>
-				          <div class="divot one-1"></div>
-				        </div>
-				        <div id="dice-two-side-two" class='side two'>
-				          <div class="divot two-1"></div>
-				          <div class="divot two-2"></div>
-				        </div>
-				        <div id="dice-two-side-three" class='side three'>
-				          <div class="divot three-1"></div>
-				          <div class="divot three-2"></div>
-				          <div class="divot three-3"></div>
-				        </div>
-				        <div id="dice-two-side-four" class='side four'>
-				          <div class="divot four-1"></div>
-				          <div class="divot four-2"></div>
-				          <div class="divot four-3"></div>
-				          <div class="divot four-4"></div>
-				        </div>
-				        <div id="dice-two-side-five" class='side five'>
-				          <div class="divot five-1"></div>
-				          <div class="divot five-2"></div>
-				          <div class="divot five-3"></div>
-				          <div class="divot five-4"></div>
-				          <div class="divot five-5"></div>
-				        </div>
-				        <div id="dice-two-side-six" class='side six'>
-				          <div class="divot six-1"></div>
-				          <div class="divot six-2"></div>
-				          <div class="divot six-3"></div>
-				          <div class="divot six-4"></div>
-				          <div class="divot six-5"></div>
-				          <div class="divot six-6"></div>
-				        </div>
-				      </div>
-      			</div>  
-			</div> -->
-			<div class="controls">
+				<div class="col-lg-4 control-box">
+					<div class="controls" id="controls">
+						<button class="btn btn-lg btn-dark new mb-3 w-100"><h3>New Game</h3></button>
+						<button class="bg-success btn btn-lg btn-outline-light mb-3 roll w-100"><h3>Roll Dice</h3></button>
+						<button class="bg-success btn btn-lg btn-outline-light hold w-100"><h3>Pass Turn</h3></button>
 
-				<button class="bg-success btn btn-lg btn-outline-light mb-3 roll w-100"><h3>Roll Dice</h3></button>
-				<button class="bg-success btn btn-lg btn-outline-light hold w-100"><h3>Pass Turn</h3></button>
-			</div>
-		</div>
+					</div>
+
+					<div class="appends">
+						<div class="append"></div>
+					</div>
+				</div>
 				
-				<div class="col-lg-4 text-center border border-left p-5 panel-2 text-white">
+				<div class="col-lg-4 text-center border border-left p-5 panel-2 text-white active">
                     <h1>Player 2</h1>
                     <h1 class="display-1 score2" style="margin-bottom: 75px;">0</h1>
                      <div class="bg-secondary text-white py-3 w-50 mx-auto border border-dark border">
@@ -201,19 +127,30 @@
                 </div>
 				</div>
 			</div>
-			<div class="container my-5 mx-5">
-				<div class="row">
-					<div class="col-lg-4 offset-lg-6 w-100">
-						
-						<button type="button" class="btn btn-sm btn-dark new d-block"><h3>New Game</h3></button>
-						
-					</div>
-				</div>
-				
-			</div>	
+			
 
 
 	</section>
+	<div class="modal">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-lg-6 offset-lg-3">
+					<h1 class="display-4"></h1>
+				</div>
+				
+				
+			</div>
+			<div class="row text-center mt-5">
+				<div class="col-lg-3 offset-lg-5">
+					<button class="btn btn-lg btn-outline-light text-white asd d-block"><h3></h3></button>
+				</div>
+				
+				
+			</div>
+			
+		</div>
+		
+	</div>
 
 
 
